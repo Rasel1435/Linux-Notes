@@ -1,1 +1,57 @@
 # Linux-Notes
+
+- **pwd**: tells you which directory you are currently on. The "~" sign refers to the home directory. 
+- **cd**: change directory
+  - Going to the home directory
+    - cd 
+    - cd ~
+    - cd /home/Rasel
+- **cd -**: takes you to the directory you previously were in.
+- **clear**: clears the screen. You can also use **CTRL+L**.
+- **ls**: list the contents of the directory you are currently in. *By default it doesn't show hidden (the files/dirs start with . in their name)*
+  - **ls -a**: show all the files including hidden files.
+  - **ls -al**: gives long-listed format
+  - **ls -alh**: gives human-readable version 
+- **man *programNAME***: gives you the manual page for the program/command
+  - **man ls**
+- **touch *fileName.format***: create an empty file in the *working directory*
+- **code *filename***: creates the file and opens it in vs code
+- **cat *fileName***: gets you the content of the file
+- **less *filePATH***: does the same thing as a cat but starts from the top and you can use the tab to scroll
+- **head *filePATH***: gives you the first 10 lines
+- **tail *filePATH***: gives you the last 10 lines
+- **mkdir *dirName***: creates a new directory
+- **mv *fileName* *path***: moves the file to the given path.CUT!
+- **cp *fileName* *path***: copies the file to the given path.COPY!
+- **rm *filePATH***: removes the file.
+- **rmdir *dirPATH***: removes emypt directory
+- **rm -rf *dirPATH***: removes a directory recursively!
+- **which *command/exec***: gives you the path to the binaries of that command
+  - **which ls**
+  - **which firefox**
+- **whereis *command/exec***: gives you the path of the binaries, libraries/man page!
+- **locate *string***: lists you all the files which have the given string their name!
+  - **sudo updatedb**: updates the locate database
+- **find *dirPATH* *string***: does the same thing as locate command
+- **echo *string***: prints the string in the terminals
+- **printf**: does the same thing as an echo but its better with regex
+- **>**: redirects output to a file
+  - **echo "hello" > file1.txt**
+  - **cat .bashrc > file2.txt**
+- **grep *string* *filePATH***: gives you all the lines that have the string in the given file.
+- **|**: pipes the output of a program to another program
+  - **ls -al | sort**
+  - **ls -al | sort | grep drx**
+- **chmod**: changes the file permission
+  - **chmod +x *filePATH***: add exec permission to the file.
+- **history**: gives you the history of commands ran!
+  - **!*coomandNumber***: runs that given command
+- **!!**: runs the last command
+  - **sudo !!**
+- **kill *processID/processName***: kills the program
+  - **killall**
+  - use **htop** to kill program! It's better
+- **wget *fileURL***: downloads that given file
+- **date**: prints the date
+- **cal**: calendar
+- **bc**: calculator
